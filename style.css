@@ -1,0 +1,159 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #d4af37; /* gold color */
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:radial-gradient(circle at top,#2b1d00,#000);
+animation:fadeIn 2s ease;
+}
+
+header h1{
+font-size:60px;
+background:linear-gradient(90deg,#f5d27a,#d4a017);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+letter-spacing:5px;
+}
+
+header p{
+margin-top:20px;
+font-size:20px;
+color:#ddd;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:60px;
+color:#f5d27a;
+}
+
+/* Video Cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.card{
+background:linear-gradient(145deg,#1c1c1c,#111);
+padding:25px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+transition:0.4s;
+text-align:center;
+position:relative;
+}
+
+.card:hover{
+transform:translateY(-15px);
+box-shadow:0 20px 45px rgba(212,160,23,0.4);
+}
+
+video{
+width:100%;
+border-radius:15px;
+}
+
+/* Buttons */
+
+.btn{
+background:linear-gradient(90deg,#f5d27a,#d4a017);
+border:none;
+padding:12px 30px;
+border-radius:50px;
+cursor:pointer;
+font-weight:bold;
+margin-top:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* Pricing Cards */
+
+.price-card{
+background:linear-gradient(145deg,#1c1c1c,#111);
+padding:40px 25px;
+border-radius:25px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+position:relative;
+}
+
+.price-card:hover{
+transform:translateY(-15px);
+box-shadow:0 20px 45px rgba(212,160,23,0.5);
+}
+
+.price-card h3{
+font-size:24px;
+margin-bottom:15px;
+color:#f5d27a;
+}
+
+.price-card h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.price-card p{
+margin:10px 0;
+color:#ccc;
+}
+
+.badge{
+position:absolute;
+top:-15px;
+right:-15px;
+background:#f5d27a;
+color:black;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#111;
+color:#aaa;
+margin-top:80px;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
