@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiran Edits | Invitation Video Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>KIRAN EDITS</h1>
+<p>Premium Invitation Video Studio</p>
+</header>
+
+<section>
+<h2 class="section-title">Our Invitation Creations</h2>
+
+<div class="grid">
+
+<div class="card">
+<video controls>
+<source src="videos/video1.mp4" type="video/mp4">
+</video>
+<h3>Wedding Invitation</h3>
+<button class="btn" onclick="contact('Wedding Invitation')">
+Book This Style
+</button>
+</div>
+
+<div class="card">
+<video controls>
+<source src="videos/video2.mp4" type="video/mp4">
+</video>
+<h3>Engagement Invitation</h3>
+<button class="btn" onclick="contact('Engagement Invitation')">
+Book This Style
+</button>
+</div>
+
+<div class="card">
+<video controls>
+<source src="videos/video3.mp4" type="video/mp4">
+</video>
+<h3>Birthday Invitation</h3>
+<button class="btn" onclick="contact('Birthday Invitation')">
+Book This Style
+</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Invitation Packages</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Classic Invitation</h3>
+<h2>₹1,499</h2>
+<p>30–40 sec Video</p>
+<p>2 Revisions</p>
+<button class="btn" onclick="book('Classic Invitation - ₹1,499')">
+Book Now
+</button>
+</div>
+
+<div class="card">
+<h3>Premium Invitation</h3>
+<h2>₹2,999</h2>
+<p>45–60 sec Video</p>
+<p>4 Revisions</p>
+<button class="btn" onclick="book('Premium Invitation - ₹2,999')">
+Book Now
+</button>
+</div>
+
+<div class="card">
+<h3>Royal Wedding Package</h3>
+<h2>₹5,999</h2>
+<p>2 Videos</p>
+<p>Unlimited Minor Revisions</p>
+<button class="btn" onclick="book('Royal Wedding Package - ₹5,999')">
+Book Now
+</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Kiran Edits | Invitation Studio
+</footer>
+
+<script>
+function contact(title){
+let msg="Hello Kiran Edits, I saw your Invitation Video: "+title+" and I want to create one for my event.";
+window.open("https://wa.me/8340024193?text="+encodeURIComponent(msg));
+}
+
+function book(packageName){
+let msg="Hello Kiran Edits, I want to book the "+packageName+". Please share details.";
+window.open("https://wa.me/8340024193?text="+encodeURIComponent(msg));
+}
+</script>
+
+</body>
+</html>
